@@ -6,7 +6,6 @@ var infile = "index.html";
 
 app.get('/', function(request, response) {
   var buffer = fs.readFileSync(infile, 'utf8');
-  console.log(("Buffer: " + buffer);
   response.send(buffer);
 });
 
